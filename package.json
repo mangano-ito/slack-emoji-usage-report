@@ -5,12 +5,16 @@
   "main": "src/main.ts",
   "scripts": {
     "start": "ts-node --files -r tsconfig-paths/register src/main.ts",
+    "crawl": "npm start crawl -- ",
+    "report": "npm start report -- ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "mangano-ito",
   "license": "MIT",
   "dependencies": {
     "@slack/web-api": "^5.8.0",
+    "@types/command-line-args": "^5.0.0",
+    "command-line-args": "^5.1.1",
     "sqlite": "^3.0.3",
     "ts-node": "^8.6.2",
     "tsconfig-paths": "^3.9.0",
