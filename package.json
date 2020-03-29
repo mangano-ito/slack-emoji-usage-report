@@ -1,0 +1,19 @@
+{
+  "name": "slack-emoji-usage-report",
+  "version": "1.0.0",
+  "description": "Slack Emoji Usage Report",
+  "main": "src/main.ts",
+  "scripts": {
+    "start": "ts-node --files -r tsconfig-paths/register src/main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mangano-ito",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/web-api": "^5.8.0",
+    "sqlite": "^3.0.3",
+    "ts-node": "^8.6.2",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.8.3"
+  }
+}
