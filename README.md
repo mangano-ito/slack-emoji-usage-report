@@ -21,7 +21,8 @@ You need these permissions: `channels:history`, `channels:read`, `emoji:read` an
 First try crawling the channels you want, then generate report.
 
 ### Caution
-To invite a bot if You use a Bot token.
+- Add a bot to the channel you want to report, if using a bot token.
+- Using a user token, you need to join this channel.
 
 ### Crawl
 
