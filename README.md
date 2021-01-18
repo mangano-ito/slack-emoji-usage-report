@@ -14,7 +14,7 @@ $ npm install
 
 You need your own **Slack API Token** to run this tool. Generate it beforehand if you don't have: https://api.slack.com/apps
 
-You need below permissions.
+You need permissions below:
 - `channels:history`
 - `channels:read`
 - `emoji:read`
