@@ -39,7 +39,7 @@ $ env SLACK_TOKEN="<slack token>" npm run crawl -- --db="<database name>" --chan
 
 #### Using dotenv
 
-If using this mode, first you need run commands `$ cp _env .env`.
+If using this mode, first you need run the command: `$ cp _env .env`.
 
 ```sh
 $ npm run crawl
