@@ -5,29 +5,44 @@ A tool to crawl Slack channels and show usage report of emojis.
 ## Installation
 
 ```sh
-git clone https://github.com/mangano-ito/slack-emoji-usage-report.git
-cd slack-emoji-usage-report
-npm install
+$ git clone https://github.com/mangano-ito/slack-emoji-usage-report.git
+$ cd slack-emoji-usage-report
+$ npm install
 ```
 
 ## Prerequisites
 
 You need your own **Slack API Token** to run this tool. Generate it beforehand if you don't have: https://api.slack.com/apps
 
-You need these permissions: `channels:history`, `channels:read`, `emoji:read` and `reactions:read`.
+You need permissions below:
+- `channels:history`
+- `channels:read`
+- `emoji:read`
+- `reactions:read`
 
 ## Usage
 
 First try crawling the channels you want, then generate report.
 
 ### Caution
+
 - Add a bot to the channel you want to report, if using a bot token.
 - Using a user token, you need to join this channel.
 
 ### Crawl
 
+#### With args target db & channel name
+
 ```sh
-env SLACK_TOKEN="<slack token>" npm run crawl -- --db="<database name>" --channel="<channel name>"
+$ env SLACK_TOKEN="<slack token>" npm run crawl -- --db="<database name>" --channel="<channel name>"
+```
+
+#### Using dotenv
+
+If using this mode, first you need run the command: `$ cp _env .env`.
+
+```sh
+$ npm run crawl
 ```
 
 #### Parameters
@@ -56,8 +71,16 @@ When it's all done, the result is saved on database. Now you can generate report
 
 When you have crawled all the channel to include in reports, it's ready to generate reports:
 
+#### With args target db name
+
 ```sh
-npm run report -- --db="<database name>"
+$ npm run report -- --db="<database name>"
+```
+
+#### Using dotenv
+
+```sh
+$ npm run report
 ```
 
 #### Parameters
