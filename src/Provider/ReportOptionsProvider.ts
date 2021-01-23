@@ -9,10 +9,17 @@ const optionDefinitions: OptionDefinition[] = [
         alias: 'd',
         type: String,
     },
+    {
+        name: 'isPostSlack',
+        alias: 's',
+        type: String,
+    }
 ];
 
 export default (): ReportOptions => {
     const options = commandLineArgs(optionDefinitions, { partial: true });
 
-    return {database_name: options.db || config.SQLite.DB_NAME};
+    return {
+        database_name: options.db || config.SQLite.DB_NAME
+    };
 };

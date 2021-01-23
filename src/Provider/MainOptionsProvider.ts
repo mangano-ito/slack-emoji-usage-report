@@ -8,7 +8,7 @@ const optionDefinitions: OptionDefinition[] = [
     },
 ];
 
-export default (): ('crawl' | 'report') => {
+export default (): ('crawl' | 'report' | 'slack') => {
     const options = commandLineArgs(optionDefinitions, { partial: true });
     const mode = options.mode;
     if (!mode) {

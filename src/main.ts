@@ -11,5 +11,9 @@ import provideOptions from './Provider/MainOptionsProvider';
         case 'report':
             await report();
             break;
+        case 'slack':
+            await crawl();
+            await report();
+            break;
     }
 })();
