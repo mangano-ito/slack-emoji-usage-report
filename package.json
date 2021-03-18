@@ -7,6 +7,7 @@
     "start": "ts-node --files -r tsconfig-paths/register src/main.ts",
     "crawl": "npm start crawl -- ",
     "report": "npm start report -- ",
+    "slack": "npm start slack --",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "mangano-ito",
@@ -20,5 +21,8 @@
     "ts-node": "^8.6.2",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@slack/bolt": "^3.0.0"
   }
 }
